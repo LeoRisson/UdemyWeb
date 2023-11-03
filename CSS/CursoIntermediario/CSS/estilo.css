@@ -1,0 +1,154 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: #007fc7;*/
+}
+
+.conteudo{
+    border: 1px solid red;
+    
+    /* padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; -> se aplica ao margin também sempre sentido 
+    horario*/
+
+    padding: 20px;
+
+    margin: 20px;
+
+    width: 150px;
+}
+
+/* Elementos Flutuantes*/
+.conteudof{
+    background: blue;
+    border: 1px, solid gray;
+    width: 200px;
+    height: 200px;
+    margin:10px;
+    float: left;
+}
+.conteudof1 {
+    background: red;
+    border: 1px, solid gray;
+    width: 150px;
+    height: 150px;
+    float: right;
+}
+.conteudof-zero {
+    background: red;
+    border: 1px, solid gray;
+    width: 150px;
+    height: 150px;
+ }
+
+.clear{
+    clear: both;
+}
+
+#principal{
+    border: 5px solid red;
+    background: green;
+}
+
+#pri{
+    width: 920px;
+}
+
+.noticia{
+    background: #e5e5e5;
+    padding: 5px;
+    width: 280px;
+    margin: 7px;
+    float: left;
+}
+
+.imagem-galeria{
+    background: white;
+    width: 265px;
+    padding: 5px;
+    float: left;
+    margin: 15px;
+}
+
+.borda{
+    border: 1px solid red;
+    padding: 10px;
+}
+
+#container{
+    background: #fff;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
+
+h1{
+    position: static;
+}
+p{
+   width: 300px;
+}
+.relative{
+    border: 5px solid rebeccapurple;
+    position: relative;
+    top: 20px;
+    left: 80px;
+}
+
+.absolute{
+    position: absolute;
+    background: #f2f2f2;
+    border: 5px solid red;
+    top: 80px;
+    right: 80px;
+}
+
+.fixed {
+    position: fixed;
+    background: #f2f2f2;
+    border: 5px solid red;
+    top: 0px;
+    left: 0px;
+}
+.conteuto1{
+    border: 1px solid rebeccapurple;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+}
+.conteuto2 {
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 0;
+}
+.conteuto3 {
+    border: 1px solid yellowgreen;
+    background: paleturquoise;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 1;
+}
+a:link{
+    color: #b9c941;
+}
+a:visited {
+    color: #c0c0c0;
+}
+a:hover {
+    color: #6d790f;
+}
+a:active {
+    color: #e4f371;
+}
