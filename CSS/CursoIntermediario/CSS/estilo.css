@@ -140,6 +140,11 @@ p{
     left: 160px;
     z-index: 1;
 }
+
+a{
+    padding: 5px 10px;
+    text-decoration:none ;
+}
 a:link{
     color: #b9c941;
 }
@@ -147,7 +152,8 @@ a:visited {
     color: #c0c0c0;
 }
 a:hover {
-    color: #6d790f;
+    color: #fff;
+    background: #6d790f;
 }
 a:active {
     color: #e4f371;
