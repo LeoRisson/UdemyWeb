@@ -1,0 +1,44 @@
+*{
+    border: 1px solid red;
+    padding: 10px;
+}
+
+h1{
+    color: green;
+}
+
+/*
+.laranja{
+    color: orange;
+}
+*/
+.laranja{
+    color: orange;
+   
+}
+
+p.laranja{
+    color: orangered;
+}
+
+#cabecalho{
+    border: 1px solid blue;
+}
+
+li>a{
+    text-decoration: none;
+    color: purple;
+}
+
+p a {
+    text-decoration: line-through;
+    color: crimson;
+}
+
+h1+p{
+    color: darkgoldenrod;
+}
+
+h2~p {
+    color: greenyellow;
+}

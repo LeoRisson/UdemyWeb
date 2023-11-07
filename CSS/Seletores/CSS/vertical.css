@@ -1,0 +1,66 @@
+/* Navegação Vertical */
+
+div ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista{
+    padding: 5px 20px;
+    background: url('../imagens/seta.png') no-repeat left center;
+}
+
+.ul-menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.li-menu a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url('../imagens/menu.png') no-repeat left bottom;
+}
+a:hover{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#ul-menu-selecionado,
+#menu-selecionado {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ul-menu-selecionado, #menu-selecionado li a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url('../imagens/menu.png') no-repeat left bottom;
+}
+
+#ul-menu-selecionado,
+#menu-selecionado li a:hover {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#menu-selecionado, #ul-menu-selecionado,
+ .home a{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+    width: 200px;
+}

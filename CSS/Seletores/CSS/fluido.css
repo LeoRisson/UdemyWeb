@@ -1,0 +1,76 @@
+/* Navegação por abas */
+
+body{
+    font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
+    background: #f2f2f2;
+}
+
+#container{
+    width: 960px; /* 720px ou 85%*/
+    margin: 0 auto;
+    background: #fff;
+    min-width: 720px;
+    max-width: 1280px;
+    background: url(../imagens/coluna.png) repeat-y left top;
+}
+
+#imagem{
+    width: 90%;
+    overflow: hidden;
+}
+
+#marca{
+    height: 200px;
+    background: #225992 url('../imagens/cabecalho2.jpg') no-repeat center;
+    text-align: center;
+    line-height: 200px;
+}
+
+#conteudo{
+    width: 75%;
+    float: right;
+}
+
+#navegacao {
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background: #d1d1d1; */
+}
+
+#principal{
+    width: 64%;
+    float: left;
+}
+
+img.img-noticia{
+    width: 94%;
+    padding: 2%;
+    max-width: 600px;
+}
+
+#secundaria{
+    width: 34%;
+    float: right;
+    background: #d1d1d1;
+    padding: 5px;
+}
+
+
+#navegacao ul{
+    list-style: none;
+}
+#navegacao li a{
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
