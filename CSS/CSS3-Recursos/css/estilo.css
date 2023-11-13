@@ -1,0 +1,197 @@
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+div{
+    float: left;
+    width: 300px;
+    height: 300px;
+    background: #009670;
+    margin-right: 35px;
+}
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 10px;
+    margin: 10px;
+    -webkit-border-radius: 20px, 90px;
+    -moz-border-radius: 20px, 90px;
+    border-radius: 20px 90px;
+}
+
+.arredontamento{
+    border-radius: 150px;
+}
+.arredontamento1 {
+    border-radius: 150px;
+}
+
+#caixa2 {
+    float: left;
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 50px;
+}
+
+#caixa3 {
+    float:left;
+    margin-left: 30px;
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#caixa-degrade{
+    float: left;
+    width: 300px;
+    height: 300px;
+    background: url("../imagens/camera.png");
+}
+
+#caixa-degrade h1{
+    background: rgba(255, 255, 255, 0.8);
+}
+#caixa-gradiente {
+    float:left;
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(red, #156, #ccc);
+    /* background: url("../imagens/camera.png"); */
+}
+#radio-gradiente {
+    float: left;
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(red, violet, green, pink );
+    /* background: url("../imagens/camera.png"); */
+}
+
+#caixa-sombra{
+    float: left;
+    width: 300px;
+    height: 300px;
+    background: #009670;
+}
+
+#caixa-sombra h1{
+    color: white;
+    text-shadow: 20px 20px black;
+}
+
+/* sombra - 1º horizontal, 2º vertical, 3º blur, 4º spreed ->Box  */
+#caixa-sombra1 {
+    float: left;
+    width: 300px;
+    height: 300px;
+    background: #009670;
+box-shadow: 20px 20px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+#caixa-sombra1 h1 {
+    color: white;
+    text-shadow: 30px 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Animação -> verificar compatiplidade de browses*/
+@keyframes animacao-caixa {
+    from{ /* -> estado inicial*/
+        background: red;
+    }
+    to{/* -> estado final*/
+        background: greenyellow;
+    }
+}
+
+#caixa-animacao{
+    background: red;
+    animation: animacao-caixa;
+    animation-duration: 5s; 
+}
+
+@keyframes animacao-caixa1 {
+    from {
+        /* -> estado inicial*/
+        background: #ccc;
+        border-radius: 0;
+        top: 0
+    }
+
+    to {
+        /* -> estado final*/
+        background: #111;
+        border-radius: 300px;
+        top: 200px;
+        left: 130px;
+    }
+}
+#caixa-animacao1 {
+    position: relative;
+    background: red;
+    animation: animacao-caixa1;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+/* Transição -> verificar compatiplidade de browses*/
+
+#caixa-transicao:hover {
+    width: 400px;
+    background: orange;
+    transition: width 3s, background 3s;
+}
+
+#caixa-transicao1:hover {
+    margin-left: 35px;
+    width: 400px;
+    background: #DC143C;
+    transition: all 3s;
+}
+
+header{
+    margin: 1px solid #ccc;
+    background: #f2f2f2;
+    padding:10px ;
+}
+
+nav{
+    border: 1px solid green;
+    background: #f2f2f2;
+    padding:10px;
+}
+
+footer{
+    background: #b9c941;
+}
+
+article {
+    background:orange;
+    padding: 10px;
+}
+
+section{
+    border: 1px dotted #fff;
+}
+
+time{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside{
+    background: #009670;
+}
