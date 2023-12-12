@@ -1,0 +1,18 @@
+JavaScript
+
+		*Precedencia de execução
+			* segue a estrutura do html
+				* header carregado antes de tudo
+				* body carregado apos o header
+			*ver bem onde se deve colocar para não ter erro de procedência.
+		
+		*Variáveis:
+			* Tipos:
+				* String
+				* Number (aqui entram numeros, inteiros, frações, etc..., separador de casas decimais = ".")
+				* boolean
+			Regras:
+				* Não pode iniciar com Numeros ou caracteres especias
+				* Case sensitive
+			Concatenação:
+				* caractere + 'texto' + variavel + 'texto'

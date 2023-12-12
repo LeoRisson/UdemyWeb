@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        //variavel ABC
+        var a = 10
+        var b = 20
+        var c = null
+
+        document.write('A: ' + a + '<br />')
+        document.write('B: ' + b + '<br />')
+        document.write('C: ' + c + '<br />')
+
+        document.write('<hr />')
+        
+        //logica de inversao dos valores de A e B
+        c = a // c recebe o valor de a temporariamente
+        a = b // sobrepõe o valor de A com o valor de B
+        b = c // sobrepões o valor de B com o valor A que estava temporariamente em C
+        c = null //zera C
+
+
+        //
+        document.write('A: ' + a + '<br />')
+        document.write('B: ' + b + '<br />')
+        document.write('C: ' + c + '<br />')
+        document.write('<hr />')
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
