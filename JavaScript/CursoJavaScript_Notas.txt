@@ -16,3 +16,12 @@ JavaScript
 				* Case sensitive
 			Concatenação:
 				* caractere + 'texto' + variavel + 'texto'
+			Operadores Lógicos:
+				* Igual (==)
+				* Identico (===) igual e do mesmo tipo
+				* Diferentes (!=) 
+				* Não Identico (!==) diferentes e de tipos diferentes
+				* Menor (<)
+				* Maior (>)
+				* Menor igual (<=)
+				* Maior igual (>=)
