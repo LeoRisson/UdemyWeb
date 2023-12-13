@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var media = 7
+        var faltas_maximas = 15
+
+        var notaaluno = prompt('Digite a nota do Aluno:')
+        var faltas = prompt('Digite as faltas do Aluno')
+
+        if(notaaluno >= media && faltas <= faltas_maximas){
+            document.write('Aprovado')
+        }
+        else{
+            document.write('Reprovado')
+        }
+ 
+        //operador ternario
+        var resultado = (notaaluno >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado'
+
+
+
+        console.log(media)
+        console.log(faltas_maximas)
+        console.log(notaaluno)
+        console.log(faltas)
+        console.log(resultado)
+
+    </script>
+</head>
+
+<body>
+<h1>IF Else, operadores Lógicos</h1>
+</body>
+
+</html>

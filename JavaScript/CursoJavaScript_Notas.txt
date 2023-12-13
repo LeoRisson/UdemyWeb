@@ -25,3 +25,18 @@ JavaScript
 				* Maior (>)
 				* Menor igual (<=)
 				* Maior igual (>=)
+				* E - && verdadeiro se todas as expressoes forem verdeiras
+				* OU - || verdadeiro se pelo menos uma das expressoes forem verdadeiras
+				* Negação ! - inverte o resultado da expressao de comparação.
+			
+			Operadore Ternario:
+				* variavel = (condição) ? <verdadeiro> : <falso>
+			
+			Operadore Aritimeticos:
+				* Adição - (+)
+				* Subtração - (-)
+				* Multiplicação - (*)
+				* Divisão - (/)
+				* Modulo - (%) resto exitente em uma operação de Divisão retorna a parte inteira do resto
+				* Incremento - (++) pré / pós incremento
+				* Decremento - (--) pré / pós decremento

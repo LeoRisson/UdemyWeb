@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var num1 = prompt('informe o valor de num1:')
+        var num2 = prompt('informe o valor de num1:')
+
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+
+        document.write('A soma entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 + num2) + '<br />')
+        document.write('A subtração entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 - num2)+'<br />')
+        document.write('A multiplicação entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 * num2) + '<br />')
+        document.write('A divisão entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 / num2) + '<br />')
+        document.write('O módulo entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 % num2) + '<br />')
+        document.write('O incremento de ' + num1 + ' é: ' + (++num1) + '<br />')
+        document.write('O incremento de ' + num2 + ' é: ' + (++num2) + '<br />')
+        document.write('O decremento de ' + num1 + ' é: ' + (--num1) + '<br />')
+        document.write('O decremento de ' + num2 + ' é: ' + (--num2) + '<br />')
+        document.write('<hr /> <br />')
+        document.write('O incremento pós de ' + num1 + ' é: ' + (num1++) + '<br />')
+        document.write(num1 + '<br />')
+        document.write('O decremento pós de ' + num2 + ' é: ' + (num2--) + '<br />')
+        document.write(num2 + '<br />')
+        document.write('<hr /> <br />')
+        /*
+            var teste = 10
+            teste += 5
+            teste -= 5
+            teste *= 5
+            teste /= 5
+            teste %3
+        */
+
+        //precedencia das operações
+        //1º multiplicação e divição
+        //2º soma e subtração
+        // () - aplicar a precedencia
+        document.write(11 + 5 - 5 * 2 /2 +'<br />')
+        document.write((11 + 5 - 5 * 2) / 2 + '<br />')
+    </script>
+</head>
+
+<body>
+<h1>Operadores Aritiméticos</h1>
+</body>
+
+</html>
