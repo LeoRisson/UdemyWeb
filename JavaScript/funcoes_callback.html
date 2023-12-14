@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function exibirArtigo (id, callbackSucesso, callbackErro){
+            if(true){
+                //logica para pegar o artigo por id por requisicai http
+
+                callbackSucesso('Funções de Callback em JS', 'Funções de callback são muito importantes...')
+            }else{
+                callbackErro('Erro ao recuperar os dados ')
+            }
+        }
+
+        var callbackSucesso = function(titulo, descricao){
+            document.write('<h1>'+ titulo +'</h1>')
+            document.write('<br />')
+            document.write('<p>' + descricao + '</p>')
+        }
+        var callbackErro = function (erro) {
+            document.write('<p> <b>Erro:</b> '+ erro + '</p>')
+        }
+        exibirArtigo(1, callbackSucesso, callbackErro )
+    </script>
+</head>
+
+<body>
+<h1>Funções Anônimas</h1>
+</body>
+
+</html>

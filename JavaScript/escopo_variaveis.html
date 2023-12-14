@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        // 3 escopos: global, função e o bloco
+
+        var serie = 'friends'
+
+        if(true){
+            var serie2 = 'Lost'
+            document.write(serie)
+        }
+    document.write(serie2)
+    document.write('<br />')
+        function x(){
+            var serie3 = 'Smallvile'
+            document.write(serie)
+            document.write(serie2)
+        }
+        x()
+
+        document.write('<br />')
+        document.write(serie3)
+
+    </script>
+</head>
+
+<body>
+<h1>Escopo de Funções</h1>
+</body>
+
+</html>
