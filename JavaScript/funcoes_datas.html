@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        var data = new Date()
+        
+        document.write(data.getDate() + '<br/>')
+        document.write(data.getMonth() + 1 + '<br/>')
+        document.write(data.getFullYear() + '<br/>')
+        document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear() + '<br/>')
+    
+        document.write('<hr /> <br/><br/>')
+
+        var data2 = new Date()
+        document.write(data2.toString() + '<br/>')
+        data2.setDate(data2.getDate() + 720)
+        document.write(data2.toString() + '<br/>')
+        document.write('<br/><br/>')
+        document.write(data2.toString() + '<br/>')
+        data2.setMonth(data2.getMonth() + 1)
+        document.write(data2.toString() + '<br/>')
+        document.write('<br/><br/>')
+        document.write(data2.toString() + '<br/>')
+        data2.setFullYear(data2.getFullYear() - 1)
+        document.write(data2.toString() + '<br/>')
+
+        document.write('<hr /> <br/><br/>')
+
+        var data3 = new Date(1979, 6, 8)
+        var data4 = new Date(2023, 11, 15)
+        document.write(data3.toString() + '<br/>')
+        document.write('<hr />')
+        document.write(data4.toString() + '<br/>')
+        document.write('<hr />')
+        document.write(data3.getTime() + '<br/>')
+        document.write('<hr />')
+        document.write(data4.getTime() + '<br/>')
+        document.write('<hr />')
+        document.write(data4.getTime() - data3.getTime() + '<br/>')
+        document.write('1 dia tem :'+ (1*24*60*60*1000) +'<br/>')
+
+        var ml = data4.getTime() - data3.getTime()
+        var dia = (1 * 24 * 60 * 60 * 1000)
+
+        document.write('a Qquantidade de dias entre as datas São :' + Math.ceil(ml / dia) + '<br/>')
+        document.write('a Qquantidade de Anos entre as datas São :' + Math.ceil(ml / dia)/360 + '<br/>')
+    </script>
+</head>
+
+<body>
+    <br>
+    <hr>
+    <h1>Funções Nativas para Manipular Datas</h1>
+</body>
+
+</html>

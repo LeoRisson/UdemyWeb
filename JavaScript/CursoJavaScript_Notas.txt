@@ -40,3 +40,15 @@ JavaScript
 				* Modulo - (%) resto exitente em uma operação de Divisão retorna a parte inteira do resto
 				* Incremento - (++) pré / pós incremento
 				* Decremento - (--) pré / pós decremento
+			
+			Eventos Mouse
+				* onclick
+				* ondbclick
+				* onmouseup
+				* onmouseover
+				* onmouseout
+			
+			Eventos Teclado
+				* onkeydow
+				* onkeypress
+				* onkeyup

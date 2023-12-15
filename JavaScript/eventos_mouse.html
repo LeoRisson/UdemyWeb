@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function acao (){
+            alert('Evento disparado')
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <hr>
+    <h1>Eventos do Mouse</h1>
+    <div style="display: flexbox; ;">
+    <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px;"></div>
+    <br>
+    <div ondblclick="acao()" style="background: orange; height: 150px; width: 150px;"></div>
+    <br>
+    <div onmouseup="acao()" style="background: red; height: 150px; width: 150px;"></div>
+    <br>
+    <div onmouseover="acao()" style="background: green; height: 150px; width: 150px;"></div>
+    <br>
+    <div onmouseout="acao()" style="background: blue; height: 150px; width: 150px;"></div>
+    <br>
+    </div>
+</body>
+
+</html>

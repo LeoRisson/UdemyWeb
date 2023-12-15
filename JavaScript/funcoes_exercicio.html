@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var nun1 = prompt('Digite um número')
+        var operacao = prompt('Entre com a Operação Aritimetica')
+        var nun2 = prompt('Digite outro número')
+
+        nun1 = parseFloat(nun1)
+        nun2 = parseFloat(nun2)
+
+        var resultado = calcular(nun1, nun2, operacao)
+        document.write('O primeiro número digitado foi : ' + nun1 + '<br />')
+        document.write('O segundo número digitado foi : ' + nun2 + '<br />')
+
+        document.write('O Resuntado é: ' + resultado + '<br />')
+
+        function calcular(nun1, nun2, operacao){
+           
+            var x = 0
+
+            if (operacao == 'soma'){
+                return (nun1 + nun2)
+            }
+            if(operacao == 'subtracao'){
+                return (nun1-nun2)
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <br>
+    <hr>
+    <h1>Funções Exercício</h1>
+</body>
+
+</html>
