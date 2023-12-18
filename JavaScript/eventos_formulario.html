@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function acao (){
+            //alert('Evento disparado')
+            console.log('Recebeu o Foco')
+        }
+        function acao1() {
+            console.log('Perdeu o Foco')
+        }
+        function acao2() {
+            alert('Estado foi modificado')
+        }
+    </script>
+</head>
+  
+<body>
+    <br>
+    <hr>
+    <h1>Eventos do Formulário</h1>
+    <input onfocus="acao()" type="text" placeholder="Foco" />
+    <input onfocus="acao()" onblur="acao1()" type="text" placeholder="Foco & blur" />
+
+    <select onchange="acao2()">
+        <option>-- Selecione --</option>
+        <option value="1">Primeira Opção</option>
+        <option value="2">Segunda Opção</option>
+    </select>
+</body>
+
+</html>

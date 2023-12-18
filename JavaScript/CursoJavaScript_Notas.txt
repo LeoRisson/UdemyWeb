@@ -52,3 +52,22 @@ JavaScript
 				* onkeydow
 				* onkeypress
 				* onkeyup
+			
+			Eventos Janela
+				* onload
+				* onresize
+				* onscrell
+
+			Eventos Formulários
+				* onload
+				* onfocus
+				* onblur
+				* onchange
+			
+			DOM - Document Object Model
+				* GetElementByID
+				* GetEmementsByTagNames
+				* GetEmementsByClassNames
+				* GetEmementsByNames
+
+			debugger - debug do JavaScript
