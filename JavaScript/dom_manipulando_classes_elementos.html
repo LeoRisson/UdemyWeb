@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        .estilo1{
+            background: #fff000;
+            color: #fff;
+            height: 200px;
+            width: 300px;
+            text-align: center;
+            padding: 50%;
+        }
+        .estilo2{
+            width: 400px;
+            height: 50px;
+            background-color: #ff0000;
+            text-align: center;
+            font-size: 25px;
+            color: #000;
+            padding: 25px;
+
+        }
+    </style>
+
+    <script>
+        //debugger para debugar em tempo real
+        function modificlasse(){
+                   
+            document.getElementById('mensagem').className = 'estilo2'
+        }
+
+    </script>
+</head>
+
+<body>
+    <br>
+    <hr>
+    <h1>DOM - Manipulando Classes de  Elementos HTML</h1>
+    <button type="button" onclick="modificlasse('')">Aplicar Classe</button>
+
+    <hr>
+
+    <div id="mensagem" class="estilo1">
+        Modificando a Classe do Elemento
+    </div>
+
+</body>
+
+</html>

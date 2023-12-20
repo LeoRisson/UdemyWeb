@@ -71,3 +71,10 @@ JavaScript
 				* GetEmementsByNames
 
 			debugger - debug do JavaScript
+
+			Array
+				* Declaração pode ser informando o indice Array() -> Lista
+				* Ou sem informa o Indice usando [ lista ] 
+				* propriedade length retorna quantidade de elementos (indices) da lista 
+					 na string retorna tamnhano do campo
+				*

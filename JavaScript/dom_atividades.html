@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        //debugger para debugar em tempo real
+        function entrou(){
+            document.getElementById('texto').style.background = '#fff000'
+        }
+        function saiu(){
+          var conteudo = document.getElementById('texto').value
+          
+          if(conteudo.length <= 3){
+            document.getElementById('texto').style.background = '#ff0000'
+          }else{
+            document.getElementById('texto').style.background = '#00ff00'
+          }
+        }
+
+    </script>
+</head>
+
+<body>
+    <br>
+    <hr>
+    <h1>DOM - Atividade de fixação</h1>
+
+    <input type="text" id="texto" placeholder="digite aqui" onfocus="entrou()" onblur="saiu()">
+
+</body>
+
+</html>
