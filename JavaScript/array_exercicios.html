@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+        function adicionaObjetos(){
+            var objetodigitado = document.getElementById('texto').value
+            console.log(objetos)
+
+            if(objetodigitado == '' ){
+                alert('Informe um valor válido')
+            }
+            else if (objetos.indexOf(objetodigitado) < 0){
+                objetos.push(objetodigitado)
+                document.getElementById('texto').value = ''
+                console.log(objetos)
+            }
+            else{
+                 alert('Objeto já foi adicionado')
+            }
+
+
+        }
+
+        function ordenaObjetos() {
+            console.log(objetos.sort())
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <hr>
+    <h1>Array - Exercícios</h1>
+
+    <input type="text" id="texto" placeholder="Digite um Opjeto">
+    <button type="button" id="adiciona" onclick="adicionaObjetos()">Adicionar</button>
+    <button type="button" id="ordena" onclick="ordenaObjetos()">Ordenar</button>
+    
+</body>
+
+</html>
