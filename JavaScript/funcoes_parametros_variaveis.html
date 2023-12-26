@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+            /*
+            var largura = prompt('Digite a largura do terreno em metros:')
+            var comprimento = prompt('Digite a comprimento do terreno em metros:')
+    
+           var calculo = calcularAreaTerreno(largura, comprimento)
+    
+            document.write('o terreno possui ' + calculo + ' metros quadrados')
+    
+            //void
+            //retorno
+            function calcularAreaTerreno(largura, comprimento) {
+    
+                //logica
+                var area = largura * comprimento
+    
+                return area
+            }
+            
+            function soma(a, b) {
+                //b = b === undefined ? 0 : b
+                return a + b
+            }
+
+            console.log(soma(7, 15))
+            console.log(soma(7, 15, 9, 6)) // desconsidera os parametros a mais
+            console.log(soma(7)) //retorna um erro, pois o segundo parametro fica como undefined
+            console.log(soma())
+            */
+
+            function soma(){
+                var resultado = 0
+                for (var i in arguments){
+                    //console.log(arguments[i])
+                    resultado += arguments[i]
+                } 
+                return resultado
+               // console.log(arguments)
+            }
+
+            console.log(soma(7, 5, 3.2, 0.8, ' joao'))
+    </script>
+</head>
+
+<body>
+    <br>
+    <hr>
+    <h1>Funções Parametros Variaveis</h1>
+
+</body>
+
+</html>

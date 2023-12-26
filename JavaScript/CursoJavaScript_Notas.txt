@@ -77,4 +77,14 @@ JavaScript
 				* Ou sem informa o Indice usando [ lista ] 
 				* propriedade length retorna quantidade de elementos (indices) da lista 
 					 na string retorna tamnhano do campo
-				*
+				
+			Tratamento de Erros:
+				* try (tente)
+				* catch (erro , pegar)
+				* finally (finalmente)
+				* throw (se erro lançar)
+			
+			BOM - Browse Object Model
+				* API que permite acesso via JS aos recursos do Browse
+				* forçar o redirecionamento de URL
+				* Acessar cookies 
