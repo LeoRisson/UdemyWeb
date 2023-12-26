@@ -1,0 +1,16 @@
+ *** AJAX ***
+    
+    * Asynchronous JavaScript And XML
+        * Uma metodologia de programação que possibilita a comunicação
+         assincrona entre front-end e back-end de aplicações web.
+         fomrma de se pensar e implementar soluções.
+        * Inicialmente disponibilizado na versão 4.0 do IE
+        * Potencializou a criação do conceito de WEB 2.0
+        
+    * Requisições Sincronas
+        * quando efetuamos uma requisição o Browser fica aguardando resposta do servidor
+        * enquqnato não se obtiver uma resposta, outra requisição não é enviada
+
+    * Requisições Assincronas
+        * o Browser necessariamente não precisa esperar resposta da requisição para efeturar outra
+        * é possivel efetuar diversas requisições de forma paralela
