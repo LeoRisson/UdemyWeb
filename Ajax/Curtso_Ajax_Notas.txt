@@ -16,3 +16,22 @@
     * Requisições Assincronas
         * o Browser necessariamente não precisa esperar resposta da requisição para efeturar outra
         * é possivel efetuar diversas requisições de forma paralela
+    
+    * Estados das Requisições (STATE != STATUS)
+        * ReadyState
+            * 0 - Requisição Não Inicializada
+            * 1 - Conexão Estabelecida com o servidor
+            * 2 - Requisição Recebida
+            * 3 - Processando a Requisição
+            * 4 - Requisição Finalizada
+
+    * STATUS das Requisições
+        * divididos em 5 grupos (objeto httprequet.STATUS)
+            * Grupo 100 - Respostas Informativas
+            * Grupo 200 - Respostas Sucesso
+            * Grupo 300 - Respostas de Redirecionamento
+            * Grupo 400 - Respostas de Erro Lado Cliente
+            * Grupo 500 - Respostas de Erro Lado Servidor
+    
+    * Recuperando Conteudo das Requisições
+        * objeto httprequet.ResponseText
