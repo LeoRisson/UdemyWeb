@@ -1,0 +1,68 @@
+JQUERY
+    * Biblioteta JavaScript (escreva menos e faça mais)
+    * Seleção e manipulação de elementos HTML
+    * Navegação pelo DOM
+    * Manipulação de CSS
+    * Eventos
+    * Efeitos de Animações
+    * AJAX
+    * Plugins
+
+    * Seletor
+        * $ => permite acesso aos recursos da Biblioteta do JQUERY
+        * selecionar elementos por tag - $(tag)
+        * selecionar elementos por classe - $(.classe)
+        * selecionar elementos por id - $(#id)
+    
+    * Atuando sobre o array de retorno de Seleção
+        * :first => retorna o peimeiro item
+        * :last => retorna o ultimo item
+        * :even => retorna os indices pares
+        * :odd => retorna os indices ímpares
+
+    * Sequenvcia de Execusão dos scripts
+        * Sequencia gravitacional
+            * solucionando no JS puro
+                * evento onload do body =>()
+                * window.onload =>()
+            * solucinando no JQUERY
+                * $(document).ready(function(){})
+                * $(function) => passando a função direto (wraper)
+
+    * Navegação entre os Elementos HTML
+        * selecionar por relação existente dos elementos.
+        * parent() (elemento pai)
+        * colesest() (procura por elementos pai)
+        * find() (procura por elementos filhos)
+
+    * Manipulando CSS
+        * CSS() -> adiciona propriedade ao estilo CSS
+        * addClass() -> adiciona classes
+        * hasClass() -> verifica a existencia de uma classe no elemento HTML
+        * removeClass() -> remove classes
+
+    * Eventos
+        * mouse:
+            *mousedown
+            *mouseup
+            *click
+            *double click
+            *mouse move
+            *mouse entre
+            *mouse leave
+            *mouse over
+            *mouse out
+        * teclado:
+            * Scroll
+            * resize
+
+        * janela:
+            *
+            *
+            *
+            *
+        * formulário:
+            *
+            *
+            *
+            *

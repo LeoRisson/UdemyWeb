@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY</title>
+     <!-- <script src="./jquery-3.7.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Selecionando Elementos parte 2</h1>
+
+    <div class="lista1">
+    <input class="exemplo2" type="text" placeholder="input 1">
+    <input class="exemplo2" type="text" placeholder="input 2">
+    <input class="exemplo2" type="text" placeholder="input 3">
+    </div>
+
+    <div>Div 1</div>
+    <div>Div 2</div>
+    <div>Div 2</div>
+
+    <ul class="lista1">
+        <li>Opção 1</li>
+        <li class="exemplo2">Opção 2</li>
+        <li class="exemplo2">Opção 3</li>
+    </ul>
+
+    <ul class="lista2">
+        <li class="exemplo2">Opção 1</li>
+        <li class="exemplo2">Opção 2</li>
+        <li>Opção 3</li>
+    </ul>
+
+</body>
+
+    <script>
+        // combinação de seletores
+            // selecionar elementos por classe e tag especifica
+            //console.log($('div.exemplo1'))
+
+            //selecionar elementos por classe por classe especifica
+            //console.log($('ul.lista1 .exemplo2'))
+
+        // atuação sobre o array de retorno dos elementos selecionados
+            console.log($('.lista1 .exemplo2'))
+
+            console.log($('.lista1 .exemplo2:first'))
+            console.log($('.lista1 .exemplo2:last'))
+            console.log($('.lista1 .exemplo2:even'))
+            console.log($('.lista1 .exemplo2:odd'))
+
+
+    </script>
+
+</html>
