@@ -48,21 +48,43 @@ JQUERY
             *click
             *double click
             *mouse move
-            *mouse entre
+            *mouse enter
             *mouse leave
             *mouse over
             *mouse out
-        * teclado:
+        * Janela:
             * Scroll
             * resize
 
-        * janela:
-            *
-            *
-            *
-            *
+        * teclado:
+            * Key Up
+            * Key Down
+
         * formulário:
-            *
-            *
-            *
-            *
+            * focus
+            * blur
+            * change
+            * submit
+        * adicionar e remover eventos (on / off)
+
+        * Eventos acionados de forma programatica
+            * trigger => aciona evento de forma programatica
+            * hover => função auxiliar para captura de eventos(mouse....)
+            * toggleclass => função asuxiliar para inclusão / remoção de classe.
+        
+        * Efeitos Especiais 
+            * funções prontas de transição
+            * show
+            * hide
+            * toggle
+            * fade out
+            * fade in
+            * fade toggle
+            * fade top
+            * slide Up
+            * slide down 
+            * slide toggle
+        * Animate
+            * transições customizadas
+            * espera 2 parametros (<propriedades visuais>, <opções de transição>)
+            * atua sobre qualquer propriedade CSS com valor numérico

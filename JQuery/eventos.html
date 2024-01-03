@@ -6,6 +6,23 @@
 
 		<style>
 			
+			#divexterna{
+				background-color: #ccc;
+				width: 80px;
+				height: 80px;
+				padding: 70px;
+			}
+
+			#divinterna{
+				background-color: blue;
+				width: 80px;
+				height: 80px;
+
+			}
+
+			.imputfocado{
+				background-color: red;
+			}
 		</style>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -51,6 +68,91 @@
 					$('#resultadoDiv').html(' X '+ e.offsetX + ' Y ' + e.offsetY)
 				})
 
+				$('#divexterna').mouseover(() => {
+					$('#resultadoDiv1').html('entrou pelo mouse over <br>')
+				})
+
+				$('#divexterna').mouseout(() => {
+					$('#resultadoDiv12').html('saiu pelo mouse out ')
+				})
+
+				$('#divinterna').mouseover(() => {
+					$('#resultadoDiv13').html('entrou pelo mouse over <br>')
+				})
+
+				$('#divinterna').mouseout(() => {
+					$('#resultadoDiv14').html('saiu pelo mouse out ')
+				})
+
+				$('#divexterna').mouseenter(() => {
+					$('#resultadoDiv12').html('entrou pelo mouse enter ')
+				})
+
+				$('#divexterna').mouseleave(() => {
+					$('#resultadoDiv1').html('saiu pelo mouse leave <br>')
+				})
+
+				$('#teclado').keydown((e) => {
+					$('#resultadoTecla').html('tecla precionada')
+					if (e.keyCode < 97 || e.keyCode > 100){
+						let txt = $(e.target).val()
+						txt = txt.slice(0, -1)
+						$(e.target).val(txt)
+					}
+					console.log('tecla precionada')
+				})
+
+				$('#teclado').keyup((e) => {
+					$('#resultadoTecla').html('tecla precionada')
+					if (e.keyCode < 97 || e.keyCode > 100) {
+						let txt = $(e.target).val()
+						txt = txt.slice(0, -1)
+						$(e.target).val(txt)
+					}
+					console.log('tecla precionada')
+				})
+				/*
+				$('#teclado').keyup((e) => {
+					$('#resultadoTecla').html('tecla liberada')
+					if(e.keyCode == 13){
+						let txt = $(e.target).val()
+						console.log(e.keyCode)
+						$('#resultadoTecla').html(txt)
+						txt = $(e.target).val('')
+					}
+
+				})
+				*/
+
+				$('#nome, #email').focus((e)=>{
+					console.log('esse elemento html recebeu o foco nome')
+					$(e.target).addClass('imputfocado')
+
+				})
+				
+				$('#email').focus((e) => {
+					console.log('esse elemento html recebeu o foco email')
+					$(e.target).addClass('imputfocado')
+				})
+
+				$('#nome, #email').blur((e) => {
+					console.log('esse elemento html perdeu o foco nome')
+					$(e.target).removeClass('imputfocado')
+				})
+
+				$('#email').blur((e) => {
+					console.log('esse elemento html perdeu o foco email')
+					$(e.target).removeClass('imputfocado')
+				})
+
+				$('#opcao').change((e) => {
+					console.log($(e.target).val())
+				})
+
+				$('#form').submit((e) => {
+					e.preventDefault()
+					console.log('formulario enviado')
+				})
 			})
 		</script>
 	</head>
@@ -77,30 +179,37 @@
 			<button type="button" id="btn2">Clique aqui 2x</button>
 			<div id="div2" style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px"></div>
 			<span>Resultado do evento sobre a div</span><span id="resultadoDiv"></span>
+
+			<div id="divexterna">
+				<div id="divinterna"></div>
+			</div>
+			<span>Div Externa:</span> <span id="resultadoDiv1"></span><span id="resultadoDiv12"></span>
+			<br>
+			<span>Div Interna:</span> <span id="resultadoDiv13"></span><span id="resultadoDiv14"></span>
 			<hr />
 
 			<h3>Teclado</h3>
 			<span>Nome:</span>
-			<input type="text" />
-			<span>Resultado do evento sobre o input</span>
+			<input type="text" id="teclado"/>
+			<span id="resultadoTecla">Resultado do evento sobre o input</span>
 			<hr />
 
 			<h3>Formulário</h3>
-			<form>
+			<form id="form">
 				<span>Nome:</span>
-				<input type="text" />
+				<input type="text" id="nome"/>
 
 				<span>E-mail:</span>
-				<input type="text" />
+				<input type="text" id="email"/>
 
 				<span>Motivo do contato:</span>
-				<select>
+				<select id="opcao">
 					<option value="">-- Selecione --</option>
 					<option value="duvida">Dúvida</option>
 					<option value="sugestao">Sugestão</option>
 				</select>
 				
-				<button type="button">Enviar</button>
+				<button type="submit" id="enviar">Enviar</button>
 			</form>
 		</div>
 	</body>
