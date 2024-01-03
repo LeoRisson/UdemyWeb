@@ -19,7 +19,7 @@ $(document).ready(() => {
 
         $.ajax({
             type: 'GET', 
-            url: 'app.php',
+            url: 'http://127.0.0.1:5500/app_dashboard/app.php',
             data: `competencia=${competencia}`, //x-www-form-urlencoded
             //datatype:'json',
             success: dados => {
